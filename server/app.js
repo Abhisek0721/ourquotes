@@ -25,7 +25,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(cors());
 try {
-    app.use(express.static(path.join(__dirname,'static')));
+    app.use(express.static(path.join(__dirname,'../build')));
 } catch (error) {console.log(error);}
 
 
